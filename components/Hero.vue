@@ -56,7 +56,9 @@ const { t } = useI18n();
             >
           </div>
         </div> -->
-        <div class="text-center">
+        <div
+          class="text-center animate-fade-down animate-once animate-duration-700 animate-delay-300 animate-ease-in"
+        >
           <h1
             class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl"
           >

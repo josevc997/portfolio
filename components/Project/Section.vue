@@ -68,6 +68,7 @@ const projectList = [
         v-for="(item, index) in projectList"
         :index="index"
         :item="item"
+        :key="index"
       />
     </div>
   </section>

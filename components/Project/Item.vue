@@ -13,7 +13,7 @@ defineProps<{
 </script>
 <template>
   <div
-    class="w-full border border-slate-300 rounded-md grid shadow-sm hover:shadow-2xl transition duration-500 ease-in-out group cursor-pointer"
+    class="w-full border border-slate-300 rounded-md grid shadow-sm hover:shadow-2xl transition duration-500 ease-in-out group cursor-pointer hover:scale-105"
   >
     <div class="relative">
       <div

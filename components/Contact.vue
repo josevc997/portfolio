@@ -39,7 +39,14 @@ const { t } = useI18n();
         Aute magna irure deserunt veniam aliqua magna enim voluptate.
       </p> -->
     </div>
-    <form name="contact" netlify class="mx-auto mt-16 max-w-xl sm:mt-20">
+    <form
+      name="contact"
+      method="POST"
+      data-netlify-recaptcha="true"
+      data-netlify="true"
+      netlify
+      class="mx-auto mt-16 max-w-xl sm:mt-20"
+    >
       <div class="grid grid-cols-1 gap-x-4 gap-y-6 sm:grid-cols-2">
         <div>
           <label
@@ -121,6 +128,7 @@ const { t } = useI18n();
           </div>
         </div>
       </div>
+      <div data-netlify-recaptcha="true"></div>
       <div class="mt-10">
         <button
           type="submit"

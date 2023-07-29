@@ -22,7 +22,7 @@ const handleOnSubmit = async () => {
 };
 </script>
 <template>
-  <div class="relative isolate px-6 py-24 sm:py-32 lg:px-8">
+  <section id="contact" class="relative isolate px-6 py-24 sm:py-32 lg:px-8">
     <div
       class="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]"
       aria-hidden="true"
@@ -83,7 +83,7 @@ const handleOnSubmit = async () => {
               id="first-name"
               v-model="contactForm.firstName"
               autocomplete="given-name"
-              class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 bg-slate-50 focus:outline-0"
+              class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 bg-slate-50 focus:outline-0 !text-sm"
             />
           </div>
         </div>
@@ -101,7 +101,7 @@ const handleOnSubmit = async () => {
               id="last-name"
               v-model="contactForm.lastName"
               autocomplete="family-name"
-              class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 bg-slate-50 focus:outline-0"
+              class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 bg-slate-50 focus:outline-0 !text-sm"
             />
           </div>
         </div>
@@ -119,7 +119,7 @@ const handleOnSubmit = async () => {
               v-model="contactForm.email"
               id="email"
               autocomplete="email"
-              class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 bg-slate-50 focus:outline-0"
+              class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 bg-slate-50 focus:outline-0 !text-sm"
             />
           </div>
         </div>
@@ -137,7 +137,7 @@ const handleOnSubmit = async () => {
               id="country"
               v-model="contactForm.country"
               autocomplete="country"
-              class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 bg-slate-50 focus:outline-0"
+              class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 bg-slate-50 focus:outline-0 !text-sm"
             />
           </div>
         </div>
@@ -153,7 +153,7 @@ const handleOnSubmit = async () => {
               id="message"
               rows="4"
               v-model="contactForm.message"
-              class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 bg-slate-50 focus:outline-0"
+              class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 bg-slate-50 focus:outline-0 !text-sm"
               required
             />
           </div>
@@ -163,11 +163,11 @@ const handleOnSubmit = async () => {
       <div class="mt-10">
         <button
           type="submit"
-          class="block w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+          class="block w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-center font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 !text-sm"
         >
           {{ t("Send") }}
         </button>
       </div>
     </form>
-  </div>
+  </section>
 </template>

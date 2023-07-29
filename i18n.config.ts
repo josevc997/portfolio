@@ -6,7 +6,7 @@ export default defineI18nConfig(() => ({
       FullStackDeveloper: "Full Stack Developer",
       Projects: "Projects",
       ContactMe: "Contact me",
-      Contact: "Contacto",
+      Contact: "Contact",
       FirstName: "First Name",
       LastName: "Last Name",
       Email: "Email",

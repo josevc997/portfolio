@@ -73,24 +73,28 @@ const { t } = useI18n();
               class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >{{ t("Projects") }}</NuxtLink
             >
-            <a href="" class="text-sm font-semibold leading-6 text-gray-900"
-              >{{ t("ContactMe") }} <span aria-hidden="true">→</span></a
+            <NuxtLink
+              to="/#contact"
+              class="text-sm font-semibold leading-6 text-gray-900"
+              >{{ t("ContactMe") }} <span aria-hidden="true">→</span></NuxtLink
             >
           </div>
-          <div class="flex items-center justify-center gap-2 text-gray-600">
+          <div
+            class="flex items-center justify-center gap-8 text-gray-600 mt-8"
+          >
             <a
               href="https://github.com/josevc997"
               target="_blank"
               class="transition duration-300 hover:text-gray-900"
             >
-              <Icon name="mdi:github" class="w-6 h-6" />
+              <Icon name="mdi:github" class="w-8 h-8" />
             </a>
             <a
               href="https://www.linkedin.com/in/josevc997/"
               target="_blank"
               class="transition duration-300 hover:text-gray-900"
             >
-              <Icon name="mdi:linkedin" class="w-6 h-6" />
+              <Icon name="mdi:linkedin" class="w-8 h-8" />
             </a>
           </div>
         </div>

@@ -13,19 +13,23 @@ defineProps<{
 </script>
 <template>
   <div
-    class="w-full border border-slate-300 rounded-md grid shadow-sm hover:shadow-2xl transition duration-500 ease-in-out group cursor-pointer hover:scale-105 !z-10 bg-slate-100"
+    class="w-full border border-slate-300 rounded-md grid shadow-sm hover:shadow-2xl transition duration-500 ease-in-out group cursor-pointer hover:scale-105 !z-10 bg-slate-100 dark:bg-slate-700 dark:border-slate-600"
   >
     <div class="relative">
       <div
         class="absolute inset-0 rounded-t-md group-hover:bg-slate-950/50 h-full w-full transition duration-500 ease-in-out flex items-end group-hover:visible invisible p-2 gap-2"
       >
-        <div
-          v-for="(tech, index) in item.technologies"
-          :key="index"
-          class="text-sm font-bold text-slate-100 border rounded-full px-2 py-0.5"
-        >
-          <Icon :name="tech.icon" class="w-4 h-4 inline-block" />
-          {{ tech.name }}
+        <div class="flex flex-wrap gap-1">
+          <div
+            v-for="(tech, index) in item.technologies"
+            :key="index"
+            class="text-sm font-bold text-slate-100 border rounded-full px-2 py-0.5 flex items-center gap-1"
+          >
+            <Icon :name="tech.icon" class="w-4 h-4 inline-block" />
+            <p>
+              {{ tech.name }}
+            </p>
+          </div>
         </div>
       </div>
       <NuxtImg
@@ -33,7 +37,9 @@ defineProps<{
         class="aspect-[16/9] w-full object-cover rounded-t-md"
       />
     </div>
-    <div class="px-2 p-2 group-hover:bg-slate-200">
+    <div
+      class="px-2 p-2 group-hover:bg-slate-200 dark:group-hover:bg-slate-800"
+    >
       <h5 class="text-sm font-semibold">{{ item.name }}</h5>
     </div>
   </div>

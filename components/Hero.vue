@@ -47,7 +47,7 @@ const { t } = useI18n();
       <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
         <!-- <div class="hidden sm:mb-8 sm:flex sm:justify-center">
           <div
-            class="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20"
+            class="relative rounded-full px-3 py-1 text-sm leading-6 text-slate-600 ring-1 ring-slate-900/10 hover:ring-slate-900/20"
           >
             Announcing our next round of funding.
             <a href="#" class="font-semibold text-indigo-600"
@@ -56,43 +56,43 @@ const { t } = useI18n();
             >
           </div>
         </div> -->
-        <div
-          class="text-center animate-fade-down animate-once animate-duration-700 animate-delay-300 animate-ease-in"
-        >
+        <div class="text-center">
           <h1
-            class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl"
+            class="text-4xl font-bold tracking-tight text-slate-800 dark:text-slate-200 sm:text-6xl"
           >
             José Valencia
           </h1>
-          <p class="mt-6 text-lg leading-8 text-gray-600 text-wr">
+          <p
+            class="mt-6 text-lg leading-8 text-slate-600 dark:text-slate-300 text-wr"
+          >
             {{ t("FullStackDeveloper") }}.
           </p>
           <div class="mt-10 flex items-center justify-center gap-x-6">
             <NuxtLink
               to="/#projects"
-              class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              class="rounded-md bg-indigo-600 dark:bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >{{ t("Projects") }}</NuxtLink
             >
             <NuxtLink
               to="/#contact"
-              class="text-sm font-semibold leading-6 text-gray-900"
+              class="text-sm font-semibold leading-6 text-slate-900 dark:text-slate-400"
               >{{ t("ContactMe") }} <span aria-hidden="true">→</span></NuxtLink
             >
           </div>
           <div
-            class="flex items-center justify-center gap-8 text-gray-600 mt-8"
+            class="flex items-center justify-center gap-8 text-slate-600 dark:text-slate-400 mt-8"
           >
             <a
               href="https://github.com/josevc997"
               target="_blank"
-              class="transition duration-300 hover:text-gray-900"
+              class="transition duration-300 hover:text-slate-900"
             >
               <Icon name="mdi:github" class="w-8 h-8" />
             </a>
             <a
               href="https://www.linkedin.com/in/josevc997/"
               target="_blank"
-              class="transition duration-300 hover:text-gray-900"
+              class="transition duration-300 hover:text-slate-900"
             >
               <Icon name="mdi:linkedin" class="w-8 h-8" />
             </a>

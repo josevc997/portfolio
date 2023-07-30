@@ -73,9 +73,11 @@ const { t } = useI18n();
             <NuxtLink
               to="/#projects"
               class="rounded-md bg-indigo-600 dark:bg-indigo-600 h-10 w-28 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 flex items-center justify-center"
-              as="button"
-              >{{ t("Projects") }}</NuxtLink
             >
+              <p>
+                {{ t("Projects") }}
+              </p>
+            </NuxtLink>
             <NuxtLink
               to="/#contact"
               class="text-sm font-semibold leading-6 text-slate-900 dark:text-slate-400 px-4 py-2.5"

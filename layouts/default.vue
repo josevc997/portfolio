@@ -19,7 +19,7 @@ const { locale, availableLocales } = useI18n();
           <Listbox v-model="locale">
             <div class="relative text-lg">
               <ListboxButton
-                class="relative w-full cursor-pointer rounded-lg bg-slate-100 dark:bg-slate-700 shadow min-w-[70px] flex justify-between items-center h-8 px-2 text-left focus:outline-none focus-visible:border-indigo-500 focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75 focus-visible:ring-offset-2 focus-visible:ring-offset-orange-300 sm:text-sm dark:text-slate-100"
+                class="relative w-full cursor-pointer rounded-lg bg-slate-100 dark:bg-slate-700 shadow min-w-[80px] flex justify-between items-center h-8 px-2 text-left focus:outline-none focus-visible:border-indigo-500 focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75 focus-visible:ring-offset-2 focus-visible:ring-offset-orange-300 sm:text-sm dark:text-slate-100"
               >
                 <span class="block">{{ locale }}</span>
                 <span

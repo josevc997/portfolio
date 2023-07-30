@@ -72,12 +72,13 @@ const { t } = useI18n();
           <div class="mt-10 flex items-center justify-center gap-x-6">
             <NuxtLink
               to="/#projects"
-              class="rounded-md bg-indigo-600 dark:bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              class="rounded-md bg-indigo-600 dark:bg-indigo-600 px-4 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              as="button"
               >{{ t("Projects") }}</NuxtLink
             >
             <NuxtLink
               to="/#contact"
-              class="text-sm font-semibold leading-6 text-slate-900 dark:text-slate-400"
+              class="text-sm font-semibold leading-6 text-slate-900 dark:text-slate-400 px-4 py-2.5"
               >{{ t("ContactMe") }} <span aria-hidden="true">→</span></NuxtLink
             >
           </div>

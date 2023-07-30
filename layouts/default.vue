@@ -9,8 +9,8 @@ const { locale, availableLocales } = useI18n();
       class="sticky top-0 w-full shadow py-2 bg-slate-100 dark:bg-slate-800 z-50"
     >
       <div class="max-w-5xl mx-auto flex justify-between px-4 items-center">
-        <NuxtLink to="/">
-          <Icon name="logos:nuxt-icon" class="h-8 w-8" />
+        <NuxtLink to="/" aria-label="Go back to index page">
+          <Icon name="logos:nuxt-icon" class="h-8 w-8" a />
         </NuxtLink>
         <div class="flex gap-2 items-center">
           <ClientOnly>

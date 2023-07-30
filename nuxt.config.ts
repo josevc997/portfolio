@@ -71,6 +71,7 @@ export default defineNuxtConfig({
     ],
   },
   colorMode: {
+    preference: "dark", // default value of $colorMode.preference
     classSuffix: "",
   },
 });

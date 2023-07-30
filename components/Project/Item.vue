@@ -34,13 +34,15 @@ defineProps<{
       </div>
       <NuxtImg
         :src="`https://source.unsplash.com/random/600x300?sig=${index}`"
+        alt="Project Image"
         class="aspect-[16/9] w-full object-cover rounded-t-md"
+        loading="lazy"
       />
     </div>
     <div
       class="px-2 p-2 group-hover:bg-slate-200 dark:group-hover:bg-slate-800"
     >
-      <h5 class="text-sm font-semibold">{{ item.name }}</h5>
+      <p class="text-sm font-semibold">{{ item.name }}</p>
     </div>
   </div>
 </template>

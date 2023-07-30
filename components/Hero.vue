@@ -14,7 +14,7 @@ const mobileMenuOpen = ref(false);
 const { t } = useI18n();
 </script>
 <template>
-  <div class="">
+  <div class="min-h-screen">
     <div class="relative isolate px-6 lg:px-8">
       <div
         class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
@@ -44,7 +44,9 @@ const { t } = useI18n();
           "
         />
       </div>
-      <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+      <div
+        class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56 min-h-screen flex justify-center items-center"
+      >
         <!-- <div class="hidden sm:mb-8 sm:flex sm:justify-center">
           <div
             class="relative rounded-full px-3 py-1 text-sm leading-6 text-slate-600 ring-1 ring-slate-900/10 hover:ring-slate-900/20"
@@ -86,6 +88,7 @@ const { t } = useI18n();
               href="https://github.com/josevc997"
               target="_blank"
               class="transition duration-300 hover:text-slate-900"
+              aria-label="watch more about my projects"
             >
               <Icon name="mdi:github" class="w-8 h-8" />
             </a>
@@ -93,6 +96,7 @@ const { t } = useI18n();
               href="https://www.linkedin.com/in/josevc997/"
               target="_blank"
               class="transition duration-300 hover:text-slate-900"
+              aria-label="Read more about profesional profile"
             >
               <Icon name="mdi:linkedin" class="w-8 h-8" />
             </a>

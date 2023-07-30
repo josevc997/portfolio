@@ -26,7 +26,7 @@ watch(enabled, () => {
       :class="
         enabled
           ? 'text-slate-900 translate-x-8'
-          : 'text-slate-200 translate-x-1'
+          : 'text-slate-400 translate-x-1'
       "
       :name="enabled ? 'heroicons:moon-20-solid' : 'heroicons:sun-20-solid'"
       class="h-4 w-4 my-auto absolute inset-y-0 transition duration-200 ease-in-out"

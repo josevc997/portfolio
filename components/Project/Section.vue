@@ -62,7 +62,7 @@ const projectList = [
 </script>
 <template>
   <section id="projects" class="gap-8 grid pt-16">
-    <h3 class="text-3xl font-bold">{{ t("Projects") }}</h3>
+    <h2 class="text-3xl font-bold">{{ t("Projects") }}</h2>
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
       <ProjectItem
         v-for="(item, index) in projectList"

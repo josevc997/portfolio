@@ -1,6 +1,6 @@
 import { Resend } from "resend";
 
-const resend = new Resend("re_Gp3GG1B8_DHurAfEk4Vs9Wh9PqcCKyKQQ");
+const resend = new Resend(process.env.RESEND_CODE);
 
 const email_to = process.env.EMAIL_TO || "";
 

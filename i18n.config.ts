@@ -15,6 +15,10 @@ export default defineI18nConfig(() => ({
       Send: "Send",
       description: "My personal website",
       title: "Jose Valencia, Full Stack Developer",
+      receivedMessage: "Message received",
+      receivedMessageContent:
+        "Your message has been received and you will be contacted in the next 48 hours via email.",
+      accept: "Accept",
     },
     es: {
       FullStackDeveloper: "Desarrollador Full Stack",
@@ -29,6 +33,10 @@ export default defineI18nConfig(() => ({
       Send: "Enviar",
       description: "Mi sitio web personal",
       title: "Jose Valencia, Desarrollador Full Stack",
+      receivedMessage: "Mensaje recibido",
+      receivedMessageContent:
+        "Tu mensaje ha sido recibido y serás contactado en las próximas 48 horas via email.",
+      accept: "Aceptar",
     },
   },
 }));

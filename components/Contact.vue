@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { Resend } from "resend";
 const { t } = useI18n();
 
 const contactForm = reactive({
@@ -10,15 +9,27 @@ const contactForm = reactive({
   message: "",
 });
 
+const clearContactForm = () => {
+  contactForm.firstName = "";
+  contactForm.lastName = "";
+  contactForm.email = "";
+  contactForm.country = "";
+  contactForm.message = "";
+};
+
+const ModalIsOpen = ref(false);
+
 const handleOnSubmit = async () => {
   const { data: resDataSuccess } = await useFetch("/api/send", {
     method: "post",
     body: { text: "Nuxt is Awesome!", contactForm: contactForm },
   });
-  // if (resDataSuccess.value === "success") {
+  console.log(resDataSuccess);
 
-  // }
-  console.log(resDataSuccess.value);
+  if (resDataSuccess) {
+    ModalIsOpen.value = true;
+    clearContactForm();
+  }
 };
 </script>
 <template>
@@ -57,13 +68,7 @@ const handleOnSubmit = async () => {
       >
         {{ t("Contact") }}
       </h2>
-      <!-- <p class="mt-2 text-lg leading-8 text-slate-600">
-        Aute magna irure deserunt veniam aliqua magna enim voluptate.
-      </p> -->
     </div>
-    <!-- data-netlify-recaptcha="true"
-    data-netlify="true"
-    netlify -->
     <form
       name="contact"
       method="POST"
@@ -171,5 +176,9 @@ const handleOnSubmit = async () => {
         </button>
       </div>
     </form>
+    <EmailSended
+      :is-open="ModalIsOpen"
+      @toggleModal="ModalIsOpen = !ModalIsOpen"
+    />
   </section>
 </template>

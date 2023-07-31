@@ -47,17 +47,6 @@ const { t } = useI18n();
       <div
         class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56 min-h-screen flex justify-center items-center"
       >
-        <!-- <div class="hidden sm:mb-8 sm:flex sm:justify-center">
-          <div
-            class="relative rounded-full px-3 py-1 text-sm leading-6 text-slate-600 ring-1 ring-slate-900/10 hover:ring-slate-900/20"
-          >
-            Announcing our next round of funding.
-            <a href="#" class="font-semibold text-indigo-600"
-              ><span class="absolute inset-0" aria-hidden="true" />Read more
-              <span aria-hidden="true">&rarr;</span></a
-            >
-          </div>
-        </div> -->
         <div class="text-center">
           <h1
             class="text-4xl font-bold tracking-tight text-slate-800 dark:text-slate-200 sm:text-6xl"
@@ -67,16 +56,14 @@ const { t } = useI18n();
           <p
             class="mt-6 text-lg leading-8 text-slate-600 dark:text-slate-300 text-wr"
           >
-            {{ t("FullStackDeveloper") }}.
+            {{ t("FullStackDeveloper") }}
           </p>
           <div class="mt-10 flex items-center justify-center gap-x-6">
             <NuxtLink
               to="/#projects"
-              class="rounded-md bg-indigo-600 dark:bg-indigo-600 h-10 w-28 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 flex items-center justify-center"
+              class="rounded-md bg-indigo-600 dark:bg-indigo-600 px-4 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
             >
-              <p>
-                {{ t("Projects") }}
-              </p>
+              {{ t("Projects") }}
             </NuxtLink>
             <NuxtLink
               to="/#contact"

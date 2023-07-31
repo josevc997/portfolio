@@ -3,7 +3,8 @@ export default defineI18nConfig(() => ({
   locale: "en",
   messages: {
     en: {
-      FullStackDeveloper: "Full Stack Developer",
+      FullStackDeveloper:
+        "Passionate full stack developer in constant learning and always willing to face new challenges.",
       Projects: "Projects",
       ContactMe: "Contact me",
       Contact: "Contact",
@@ -21,7 +22,8 @@ export default defineI18nConfig(() => ({
       accept: "Accept",
     },
     es: {
-      FullStackDeveloper: "Desarrollador Full Stack",
+      FullStackDeveloper:
+        "Desarrollador full stack apasionado en constante aprendizaje y siempre dispuesto a afrontar nuevos retos.",
       Projects: "Proyectos",
       ContactMe: "Contáctame",
       Contact: "Contacto",

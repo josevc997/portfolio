@@ -1,16 +1,4 @@
 <script lang="ts" setup>
-import { ref } from "vue";
-import { Dialog, DialogPanel } from "@headlessui/vue";
-
-const navigation = [
-  { name: "Product", href: "#" },
-  { name: "Features", href: "#" },
-  { name: "Marketplace", href: "#" },
-  { name: "Company", href: "#" },
-];
-
-const mobileMenuOpen = ref(false);
-
 const { t } = useI18n();
 </script>
 <template>
@@ -66,7 +54,7 @@ const { t } = useI18n();
               {{ t("Projects") }}
             </NuxtLink>
             <NuxtLink
-              to="/#contact"
+              :to="{ path: '/', hash: '#contact' }"
               class="text-sm font-semibold leading-6 text-slate-900 dark:text-slate-400 px-4 py-2.5"
               >{{ t("ContactMe") }} <span aria-hidden="true">→</span></NuxtLink
             >

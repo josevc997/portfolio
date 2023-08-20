@@ -17,8 +17,10 @@ defineProps<{
 }>();
 </script>
 <template>
-  <div
+  <a
     class="w-full border border-slate-300 rounded-md grid shadow-sm hover:shadow-2xl transition duration-500 ease-in-out group cursor-pointer hover:scale-105 !z-10 bg-slate-100 dark:bg-slate-700 dark:border-slate-600"
+    :href="item.url"
+    target="_blank"
   >
     <div class="relative">
       <div
@@ -52,5 +54,5 @@ defineProps<{
     >
       <p class="text-sm font-semibold">{{ item.nombre }}</p>
     </div>
-  </div>
+  </a>
 </template>

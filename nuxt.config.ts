@@ -18,6 +18,7 @@ export default defineNuxtConfig({
     "@pinia/nuxt",
     "@nuxt/devtools",
     "@nuxtjs/color-mode",
+    "@nuxtjs/supabase",
   ],
   // Optionally change the default prefix.
   headlessui: {
@@ -73,5 +74,8 @@ export default defineNuxtConfig({
   colorMode: {
     preference: "dark", // default value of $colorMode.preference
     classSuffix: "",
+  },
+  supabase: {
+    redirect: false,
   },
 });

@@ -2,11 +2,16 @@
 defineProps<{
   index: number;
   item: {
-    name: string;
-    // icon: string;
-    technologies: {
-      name: string;
-      icon: string;
+    nombre: string;
+    url: string;
+    cover_image: string;
+    id: number;
+    proyecto_tecnologia: {
+      id: number;
+      tecnologia: {
+        nombre: string;
+        simple_logo: string;
+      };
     }[];
   };
 }>();
@@ -21,19 +26,22 @@ defineProps<{
       >
         <div class="flex flex-wrap gap-1">
           <div
-            v-for="(tech, index) in item.technologies"
+            v-for="(tech, index) in item.proyecto_tecnologia"
             :key="index"
             class="text-sm font-bold text-slate-100 border rounded-full px-2 py-0.5 flex items-center gap-1"
           >
-            <Icon :name="tech.icon" class="w-4 h-4 inline-block" />
+            <Icon
+              :name="tech.tecnologia.simple_logo"
+              class="w-4 h-4 inline-block"
+            />
             <p>
-              {{ tech.name }}
+              {{ tech.tecnologia.nombre }}
             </p>
           </div>
         </div>
       </div>
       <NuxtImg
-        :src="`https://source.unsplash.com/random/600x300?sig=${index}`"
+        :src="item.cover_image"
         alt="Project Image"
         class="aspect-[16/9] w-full object-cover rounded-t-md"
         loading="lazy"
@@ -42,7 +50,7 @@ defineProps<{
     <div
       class="px-2 p-2 group-hover:bg-slate-200 dark:group-hover:bg-slate-800"
     >
-      <p class="text-sm font-semibold">{{ item.name }}</p>
+      <p class="text-sm font-semibold">{{ item.nombre }}</p>
     </div>
   </div>
 </template>

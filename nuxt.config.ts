@@ -20,6 +20,7 @@ export default defineNuxtConfig({
     "@nuxtjs/color-mode",
     "@nuxtjs/supabase",
     "@vueuse/nuxt",
+    "@nuxt/image"
   ],
   // Optionally change the default prefix.
   headlessui: {

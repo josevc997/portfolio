@@ -10,7 +10,12 @@
                 class="max-w-5xl mx-auto flex justify-between px-4 items-center"
             >
                 <NuxtLink to="/" aria-label="Go back to index page">
-                    <NuxtImg src="logo.png" class="size-10" />
+                    <NuxtImg
+                        src="https://ywiutenhidpenrrwmiha.supabase.co/storage/v1/object/public/josevalencia.cl/logo.png"
+                        alt="logo"
+                        loading="lazy"
+                        class="size-10"
+                    />
                 </NuxtLink>
                 <div class="flex gap-2 items-center">
                     <ClientOnly>

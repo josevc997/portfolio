@@ -18,7 +18,6 @@ export default defineNuxtConfig({
         "@pinia/nuxt",
         "@nuxt/devtools",
         "@nuxtjs/color-mode",
-        "@nuxtjs/supabase",
         "@vueuse/nuxt",
         "@nuxt/image",
         "nuxt-gtag",
@@ -77,9 +76,6 @@ export default defineNuxtConfig({
     colorMode: {
         preference: "dark", // default value of $colorMode.preference
         classSuffix: "",
-    },
-    supabase: {
-        redirect: false,
     },
     gtag: {
         id: process.env.GTAG,

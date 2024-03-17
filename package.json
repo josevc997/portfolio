@@ -14,7 +14,6 @@
     "@nuxt/image": "^1.1.0",
     "@nuxt/image-edge": "1.0.0-28059208.2abef1b",
     "@nuxtjs/i18n": "8.0.0-beta.12",
-    "@nuxtjs/supabase": "^1.1.5",
     "@sidebase/nuxt-auth": "0.6.0-beta.2",
     "@types/node": "^18.19.4",
     "@vueuse/core": "^10.7.1",

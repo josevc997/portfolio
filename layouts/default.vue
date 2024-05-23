@@ -11,7 +11,7 @@
             >
                 <NuxtLink to="/" aria-label="Go back to index page">
                     <NuxtImg
-                        src="https://ywiutenhidpenrrwmiha.supabase.co/storage/v1/object/public/josevalencia.cl/logo.png"
+                        src="https://storage.googleapis.com/repositorio-central-1/josevalencia.cl/logos/logo.png"
                         alt="logo"
                         loading="lazy"
                         class="size-10"
